@@ -18,12 +18,12 @@ public class SortBubble {
             a[i] = in.nextInt();
         }
         
-        for(i=1; i<n; i++){
-            for(j=0; j<(n-i-1); j++){
-                if(a[j+1] < a[j]){
-                    tukar = a[j];
-                    a[j] = a[j+1];
-                    a[j+1] = tukar;
+        for(i=0; i<n; i++){
+            for(j=1; j<(n-i); j++){
+                if(a[j-1] > a[j]){
+                    tukar = a[j-1];
+                    a[j-1] = a[j];
+                    a[j] = tukar;
                 }
             }
         }
