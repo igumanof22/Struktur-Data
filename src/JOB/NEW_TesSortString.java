@@ -11,7 +11,7 @@ import java.io.*;
  *
  * @author RyderPhantom
  */
-public class TesSortString {
+public class NEW_TesSortString {
 
   public static String ArrayChallenge(String[] strArr) {
     // code goes here  
@@ -21,7 +21,7 @@ public class TesSortString {
 
     int num[] = new int[strArr.length];
 
-    for(i=0;i<n;i++){
+    for(i=0;i<strArr.length;i++){
       word = strArr[i];
       num[i] = word.length();
     }
@@ -29,9 +29,9 @@ public class TesSortString {
     for(i=0; i<n; i++){
       for(j=1; j<(n-i); j++){
         if(num[j-1] > num[j]){
-//          save = num[j-1];
-//          num[j-1] = num[j];
-//          num[j] = save;
+          save = num[j-1];
+          num[j-1] = num[j];
+          num[j] = save;
           
           saveWord = strArr[j-1];
           strArr[j-1] = strArr[j];
