@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author RyderPhantom
  */
-public class NeW_BalikString {
+public class NEW_BalikString {
     public static void main(String[] args) {
         String kalimat;
         

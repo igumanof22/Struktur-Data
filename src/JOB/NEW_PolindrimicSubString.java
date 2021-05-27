@@ -19,6 +19,7 @@ public class NEW_PolindrimicSubString {
     // code goes here
     String word, saveWord;
     StringBuffer reverse;
+    str = str.replace(" ", "");
     List<String> list = new ArrayList<>();
     for(float pivot=0; pivot<str.length(); pivot+=0.5){
         float palindromeRadius = pivot-(int)pivot;
@@ -62,7 +63,7 @@ public class NEW_PolindrimicSubString {
     }
     
     String checkWord = arrStr[0];
-    if(checkWord.length() == 2){
+    if(checkWord.length() <= 2){
       arrStr[0] = "none";
     }
     
@@ -72,6 +73,6 @@ public class NEW_PolindrimicSubString {
   public static void main (String[] args) {  
     // keep this function call here     
     Scanner s = new Scanner(System.in);
-    System.out.print(SearchingChallenge("hellosannasmith")); 
+    System.out.print(SearchingChallenge("bfsdkfb sadfsd")); 
   }
 }
