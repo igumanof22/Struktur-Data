@@ -51,6 +51,7 @@ public class NEW_KalkulatorString {
         System.out.print("Input (ex. 2 + 2) : ");
         String str = in.nextLine();
         
+        System.out.println("--------------");
         System.out.println(kalkulator(str));
     }
 }
