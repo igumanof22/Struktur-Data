@@ -37,7 +37,6 @@ public class NEW_HitungVocal {
                     str[x] = "a";
                     x++;
                     cekA=true;
-                    
                 }
             }
             if(!cekI){
